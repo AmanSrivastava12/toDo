@@ -1,101 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Caveat:wght@700&family=Exo+2:wght@300&family=Merriweather&family=Permanent+Marker&family=Rowdies&display=swap");
+:root {
+  --font1: "Acme", sans-serif;
+  --font2: "Exo 2", sans-serif;
+  --font3: "Rowdies", cursive;
+  --colordark: #06007e;
+  --colormed: #abffea;
+  --colorlight: #e5fef8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  background: #cfa109;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
+  background: var(--colorlight);
 }
-
-.intro {
-  margin: 30px 0px;
+.container {
+  overflow-x: hidden;
+}
+.nav {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: var(--colormed);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.introtext {
+  font-family: var(--font3);
   font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  color: var(--colordark);
+  word-spacing: 5px;
 }
-
-h1 {
-  color: #6d0000;
-  text-transform: uppercase;
-  font-weight: 800;
+.contcenter {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 5px 0;
 }
-
-p {
-  font-weight: 600;
+.search {
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
-
-#first {
-  margin-top: 10px;
-  color: #6d0000;
-  margin-bottom: 30px;
+textarea {
+  width: 96%;
+  padding: 5px 8px;
+  outline: none;
+  border: 3px solid var(--colordark);
+  border-radius: 5px;
+  color: var(--colordark);
+  font-family: var(--font2);
+  font-size: 16px;
+  resize: none;
 }
-
-#enter {
-  border: none;
-  padding: 4.5px 9px 4.5px 9px;
-  border: 2.3px solid black;
-  border-color: #6d0000;
-  margin-left: 3px;
-  color: #ffffff;
-  background-color: #9c4646;
-  transition: all 0.75s ease;
-  -webkit-transition: all 0.75s ease;
-  -moz-transition: all 0.75s ease;
-  -ms-transition: all 0.75s ease;
-  -o-transition: all 0.75 ease;
-  font-weight: normal;
+#enterbtn {
+  padding: 8px;
+  border: 2px solid var(--colordark);
+  border-radius: 5px;
+  margin: 0px 0 0px 12px;
+  color: var(--colordark);
+  background-color: var(--colormed);
+  font-weight: bold;
 }
-
-#enter:hover {
-  background-color: #6d0000;
-  color: #ffcd5d;
+#enterbtn:hover {
+  color: var(--colormed);
+  background-color: var(--colordark);
 }
-
+.footcenter {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.searchfoot {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: var(--colordark);
+  width: 80%;
+}
+.lists {
+  min-height: 50.5vh;
+  margin: 35px 0;
+}
 ul {
   text-align: left;
-  margin-top: 20px;
 }
-
 li {
+  font-family: var(--font2);
+  display: flex;
   list-style: none;
-  padding: 10px 20px;
-  color: #ffffff;
-  text-transform: capitalize;
-  font-weight: 600;
-  border: 2px solid #b40000;
+  color: var(--colordark);
+  border: 2px solid var(--colordark);
   border-radius: 5px;
-  margin-bottom: 10px;
-  background: #ff4545;
-  transition: all 0.75s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5 ease;
-  width: 92.5%;
+  margin: 10px auto;
+  background: var(--colormed);
+  width: 83.6%;
 }
-
 li:hover {
-  background: #e0ae0a;
+  background: var(--colorlight);
 }
-
+li > p {
+  width: 97.3%;
+  word-wrap: break-word;
+  padding: 10px;
+}
 li > button {
-  font-weight: normal;
-  background: none;
-  border: none;
+  background-color: rgb(255, 0, 0);
+  padding: 2px 10px;
+  border-radius: 3px;
   float: right;
-  color: #ffffff;
-  font-weight: 800;
-  width: 0%;
+  color: var(--colorlight);
+  outline: none;
+  border: none;
 }
-
-input {
-  min-width: 90%;
-  padding: 5px;
-  border: 2.1px solid black;
-  border-color: #6d0000;
-}
-
 .done {
-  background: #51df70 !important;
+  background: #beffcc !important;
   color: #0b6b20;
+  border: 2px solid#0b6b20;
 }
-
 .delete {
   display: none;
+}
+footer {
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-family: var(--font1);
+  background-color: var(--colormed);
+  color: var(--colordark);
+  padding: 15px;
+  letter-spacing: 0.6px;
+  word-spacing: 2px;
+}
+footer > span {
+  font-weight: bold;
 }

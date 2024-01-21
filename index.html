@@ -27,44 +27,35 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="intro col-12">
-          <h1>THINGS TO BE DONE</h1>
-          <div>
-            <div class="border1"></div>
-          </div>
-        </div>
+      <div class="nav">
+        <h1 class="introtext">THINGS TO BE DONE</h1>
       </div>
-
-      <div class="row">
-        <div class="helpText col-12">
-          <p id="first">
-            Click the "X" button to remove a specific item from your list.<br />
-            Click on the item once to mark it as complete.<br />
-            Click the "+" button to add a specific item to your list.<br />
-            Enter text below to add items to your list.
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <input
+      <div class="contcenter">
+        <div class="search">
+          <textarea
             id="userInput"
             type="text"
-            placeholder="Enter a new item (100 characters max.)"
-            maxlength="100"
-          />
-          <button id="enter">+</button>
+            rows="1"
+            placeholder="Enter a new item"
+            maxlength="150"
+            required=""
+          ></textarea>
+          <button id="enterbtn">+</button>
         </div>
       </div>
-
-      <div class="row">
-        <div class="listItems col-12">
-          <ul class="col-12 offset-0 col-sm-8 offset-sm-2"></ul>
+      <div class="footcenter">
+        <div class="searchfoot">
+          <div class="note">Click on an item once to mark it as complete.</div>
+          <div class="charlen">0 / 150</div>
         </div>
       </div>
+      <div class="lists">
+        <ul></ul>
+      </div>
+      <footer>
+        <span>&copy;</span> Developed by <span>Aman Srivastava</span>
+      </footer>
     </div>
-    <script type="text/javascript" src="todo.js"></script>
+    <script src="todo.js"></script>
   </body>
 </html>
